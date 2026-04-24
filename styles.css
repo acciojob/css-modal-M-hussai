@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+body{
+	background-color:lightgray;
+}
+.modal{
+	font-size:15px;
+	background-color:white;
+	height:130px;
+	padding:3px;
+}
+h2{
+	margin-left:30px;
+	padding:10px;
+}
+p{
+	margin-left:35px;
+	
+}
+.modal-content{
+	
+}
+.modal-header{
+	background-color:lightgreen;
+	margin:15px;
+	color:white;
+	position:relative;
+}
+.close-modal{
+	position:absolute;
+	left:600px;
+	top:50px;
+	font-size:10px;
+	background-color:white;
+	border:1px solid white;
+	
+}
+.modal-body{
+margin:20px;
+}
+
+
+}
