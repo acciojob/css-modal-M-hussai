@@ -1,0 +1,4 @@
+{
+  "testRepo": "css-modal-solution",
+  "pathToFile": "cypress/integration/tests/test.spec.js"
+}
