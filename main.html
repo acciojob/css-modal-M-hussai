@@ -1,29 +1,27 @@
-
 <html>
     <head>
-        <title>popup</title>
-        
+        <title>hun</title>
+        <link rel="stylesheet" href="./se.css">
     </head>
 <body>
-    <input id="openModal" type="checkbox" class="btn">
-    <label for="openModal" class="j">Open Modal</label>
-	<input id="bo" type="checkbox" class="boxx">
+<input type="checkbox" id="modal-toggle" class="modal-state-input">
 
-    <div class="content">
-	<div class="modal">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h2>Modal Header</h2>
-				<label for="bo" class="close-modal">X</label>
-			</div>
-			<div class="modal-body">
-				<p>Modal Body Content</p>
-			</div>
-		</div>
-        </div>
-        </div>
+<button id="openModal">
+  <label for="modal-toggle">Open Modal</label>
+</button>
 
-		
-    
+<label for="modal-toggle" class="modal-overlay"></label>
+
+<div class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Modal Header</h2>
+      <label for="modal-toggle" class="close-modal">&times;</label>
+    </div>
+    <div class="modal-body">
+      <p>Modal Body Content</p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
