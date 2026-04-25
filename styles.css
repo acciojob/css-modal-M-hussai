@@ -1,12 +1,69 @@
-/*  your css code here. If applicable */
-body{
-	background-color:lightgray;
+*{
+    padding:0;
+    margin:0;
 }
+.btn{
+    padding:10px;
+    margin-top:25%;
+    margin-left:25%;
+    background-color: blue;
+    color:white;
+    height: 40px;
+    width:100px;
+    border-radius: 10px;
+    border: none;
+}
+#a{
+display:none;
+}
+.j{
+    display: block;
+    color: white;
+    background-color: blue;
+    height: 10px;
+    width: 100px;
+    padding:10px;
+    position:relative;
+   
+
+}
+.content{
+   display: none;
+   position:absolute;
+  
+
+    background-color:gray;
+    height:100%;
+    width:100%;
+    align-content: center;
+}
+#bo{
+    display: none;
+}
+.btn:checked ~ .content{
+    display: block;
+}
+.btn:checked ~ .j{
+    display: none;
+}
+.boxx:checked ~ .content{
+    display: none;
+}
+.boxx:checked ~ .j{
+    display: block;
+}
+
 .modal{
 	font-size:15px;
 	background-color:white;
 	height:130px;
 	padding:3px;
+    margin:-300px 100px;
+    animation-name: down;
+    animation-duration:0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in;
+    
 }
 h2{
 	margin-left:30px;
@@ -14,9 +71,6 @@ h2{
 }
 p{
 	margin-left:35px;
-	
-}
-.modal-content{
 	
 }
 .modal-header{
@@ -27,8 +81,11 @@ p{
 }
 .close-modal{
 	position:absolute;
-	left:600px;
+    font-size: 30px;
+	left:99%;
 	top:50px;
+    color: black;
+    font-family: sans-serif;
 	font-size:10px;
 	background-color:white;
 	border:1px solid white;
@@ -37,6 +94,11 @@ p{
 .modal-body{
 margin:20px;
 }
-
-
+@keyframes down{
+    from{
+        margin-top:-400px;
+    }
+    to{
+        margin-top:-200px;
+    }
 }
