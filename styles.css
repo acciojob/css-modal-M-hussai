@@ -16,7 +16,7 @@
 #a{
 display:none;
 }
-.j{
+#openModel{
     display: block;
     color: white;
     background-color: blue;
@@ -31,15 +31,10 @@ display:none;
    display: none;
    position:absolute;
    position: relative;
-  
-
-    background-color:gray;
+   background-color:gray;
     height:100%;
     width:100%;
     align-content: center;
-}
-#a{
-    display: none;
 }
 
 .btn2{
@@ -55,7 +50,7 @@ display:none;
 .btn:checked ~ .content{
     display: block;
 }
-.btn:checked ~ .j{
+.btn:checked ~ #openModal{
     display: none;
 }
 
