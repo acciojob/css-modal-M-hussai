@@ -4,18 +4,18 @@
 }
 
 /* --- THE OVERLAY --- */
-/* This covers the whole screen when the checkbox is checked */
+
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dimmed background */
-  display: none; /* Hidden by default */
+  width: 100vw; /* Use vw/vh to be sure it covers everything */
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
   z-index: 10;
+  cursor: pointer; /* Add this to help verify it's interactive */
 }
-
 /* --- THE MODAL CONTAINER --- */
 .modal {
   display: none; /* Hidden by default */
@@ -62,14 +62,12 @@
 .modal-body {
   padding: 15px;
 }
-
 .close-modal {
   cursor: pointer;
   font-size: 24px;
   font-weight: bold;
-  margin-top:50px;
+  /* Remove margin-top: 50px; */
 }
-
 #openModal {
   padding: 10px 20px;
   cursor: pointer;
