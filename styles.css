@@ -6,8 +6,8 @@
     padding:10px;
     margin-top:25%;
     margin-left:25%;
-    background-color: blue;
-    color:white;
+    background-color:gray;
+    
     height: 40px;
     width:100px;
     border-radius: 10px;
@@ -16,10 +16,10 @@
 #a{
 display:none;
 }
-#openModel{
+#openModal{
     display: block;
-    color: white;
-    background-color: blue;
+    
+    background-color:lightgray;
     height: 10px;
     width: 100px;
     padding:10px;
@@ -28,34 +28,41 @@ display:none;
 
 }
 .content{
-   display: none;
-   position:absolute;
-   position: relative;
-   background-color:gray;
-    height:100%;
+   display:none;
+  
+
+       height:100%;
     width:100%;
     align-content: center;
+
+}
+#a{
+    display: none;
 }
 
 .btn2{
+   
   display:block; /* Hidden by default */
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;  /* Covers full viewport width */
   height: 100vh; /* Covers full viewport height */
-  background: rgba(0, 0, 0, 0.5);
+  background:gray;
    /* Sits behind the modal */
 }
 .btn:checked ~ .content{
     display: block;
 }
-.btn:checked ~ #openModal{
-    display: none;
+.btn:checked ~ .btn2{
+    display:block;
 }
+
 
 .modal{
 
+z-index:99;
+opacity: 0.9;
 	font-size:15px;
 	background-color:white;
 	height:130px;
@@ -95,8 +102,8 @@ p{
 	
 }
 .modal-body{
+   
 margin:20px;
-z-index: 100;
 }
 @keyframes down{
     from{
