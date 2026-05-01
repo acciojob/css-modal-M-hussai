@@ -4,34 +4,24 @@
         <link rel="stylesheet" href="./se.css">
     </head>
 <body>
-	<!-- The hidden checkbox that controls the state -->
 <input type="checkbox" id="modal-toggle" class="modal-state-input">
 
-<!-- Requirement: Button with id "openModal" -->
 <button id="openModal">
   <label for="modal-toggle">Open Modal</label>
 </button>
 
-<!-- Requirement: Overlay to close when clicking outside -->
+<!-- Full-screen label to catch "outside" clicks -->
 <label for="modal-toggle" class="modal-overlay"></label>
 
-<!-- Requirement: Div with class "modal" -->
 <div class="modal">
-  <!-- Requirement: Div with class "modal-content" -->
   <div class="modal-content">
-    
-    <!-- Requirement: Div with class "modal-header" -->
     <div class="modal-header">
       <h2>Modal Header</h2>
-      <!-- Requirement: Close button with class "close-modal" -->
       <label for="modal-toggle" class="close-modal">&times;</label>
     </div>
-
-    <!-- Requirement: Div with class "modal-body" -->
     <div class="modal-body">
       <p>Modal Body Content</p>
     </div>
-    
   </div>
 </div>
 </body>

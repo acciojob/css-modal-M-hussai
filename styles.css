@@ -1,8 +1,5 @@
-.modal-state-input {
-  display: none;
-}
+.modal-state-input { display: none; }
 
-/* Ensure the overlay is a fixed layer that covers the WHOLE screen */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -12,7 +9,6 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 10;
-  cursor: pointer;
 }
 
 .modal {
@@ -24,18 +20,16 @@
   z-index: 20;
   background: white;
   width: 400px;
-  border-radius: 8px;
 }
 
-/* Toggling logic */
+/* Ensure these display rules match what the test expects ('block' vs 'none') */
 .modal-state-input:checked ~ .modal,
 .modal-state-input:checked ~ .modal-overlay {
   display: block;
 }
 
-/* Styling the close button to be easily clickable by Cypress */
 .close-modal {
   cursor: pointer;
+  padding: 10px; /* Makes it easier for the test to click */
   font-size: 24px;
-  padding: 10px; /* Gives a larger hit-area for the test */
 }
