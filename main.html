@@ -1,29 +1,33 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>pop3</title>
-        <link rel="stylesheet" href="./g.css">
-    </head>
+<head>
+    <title>Modal Popup</title>
+    <link rel="stylesheet" href="./g.css">
+</head>
 <body>
-    <input id="a" type="checkbox" class="btn">
-    <label for="a" id="openModal">Open Modal</label>
+    <!-- Hidden checkbox to control modal state -->
+    <input id="a" type="checkbox">
     
-	<div class="content">
-		<label for="a" class="btn2"></label>
-	<div class="modal">
-        
-		<div class="modal-content">
-			<div class="modal-header">
-				<h2>Modal Header</h2>
-				<label for="a" class="close-modal">X</label>
-			</div>
-			<div class="modal-body">
-				<p>Modal Body Content</p>
-			</div>
-		</div>
+    <!-- Open Modal Button -->
+    <button id="openModal" class="btn">Open Modal</button>
+    
+    <!-- Backdrop -->
+    <div class="btn2"></div>
+    
+    <!-- Modal Container -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+                <button class="close-modal">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Modal Body Content</p>
+            </div>
         </div>
-        </div>
+    </div>
 
-		
-    
+    <!-- Script -->
+    <script src="./script.js"></script>
 </body>
 </html>
