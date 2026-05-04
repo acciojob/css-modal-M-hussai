@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Modal Popup</title>
-    <link rel="stylesheet" href="./g.css">
-</head>
-<body>
-    <!-- Hidden checkbox to control modal state -->
-    <input id="a" type="checkbox">
-    
-    <!-- Open Modal Button -->
-    <button id="openModal" class="btn">Open Modal</button>
-    
-    <!-- Backdrop -->
-    <div class="btn2"></div>
-    
-    <!-- Modal Container -->
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal Header</h2>
-                <button class="close-modal">×</button>
-            </div>
-            <div class="modal-body">
-                <p>Modal Body Content</p>
-            </div>
-        </div>
-    </div>
+<!-- Trigger Button -->
+<button id="openModal">Open Modal</button>
 
-    <!-- Script -->
-    <script src="./script.js"></script>
-</body>
-</html>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Modal Header</h2>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>Modal Body Content</p>
+    </div>
+  </div>
+</div>
