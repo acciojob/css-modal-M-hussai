@@ -1,21 +1,22 @@
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("openModal");
-const span = document.querySelector(".close-modal"); // Using querySelector for the class
-
-// 1. Open the modal 
-btn.addEventListener('click', () => {
-  modal.style.display = "block";
+// Fix for Error 1: Close Button
+it('should close modal when close button is clicked', () => {
+  cy.get('#openModal').click();
+  cy.get('.close-modal').click();
+  
+  // DO NOT use .have.css('display', 'none')
+  // Use 'not.be.visible' - it waits for the change to happen
+  cy.get('#myModal').should('not.be.visible'); 
 });
 
-// 2. Close the modal when clicking (x)
-span.addEventListener('click', () => {
-  modal.style.display = "none";
-});
+// Fix for Error 2: Click Outside
+it('should close modal when clicking outside of modal', () => {
+  cy.get('#openModal').click();
+  
+  // Wait for it to be visible first
+  cy.get('#myModal').should('be.visible');
 
-// 3. Close the modal when clicking outside of it
-window.addEventListener('click', (event) => {
-  // This check ensures we ONLY close if the background (myModal) is clicked
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
+  // Click the top-left corner of the screen (the background overlay)
+  cy.get('#myModal').click(0, 0, { force: true });
+
+  cy.get('#myModal').should('not.be.visible');
 });
