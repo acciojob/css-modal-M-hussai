@@ -2,12 +2,11 @@
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 1; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.5); /* This is what the test clicks "outside" */
 }
 
 /* Modal Content Box */
